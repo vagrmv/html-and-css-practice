@@ -1,0 +1,52 @@
+.benefit{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    &:last-child{
+        margin-bottom: 30px;
+    }
+
+    @media @screen-gt-m{
+        margin-top: 45px;
+
+        &:last-child{
+            margin-bottom: 45px;
+        }
+    }
+
+    &__icon{
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+
+        @icons: delivery, support, return;
+        each(@icons, {
+            &_@{value}{
+                background-image: url('@{value}.svg');
+            }
+        })
+
+        @media @screen-gt-m{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__text{
+        margin-left: 20px;
+
+        @media @screen-gt-s{
+            margin-left: 10px;
+        }
+
+        @media @screen-gt-m{
+            margin-left: 30px;
+        }
+    }
+}
+
+.benefit-wrapper{
+    background-color: #eee;
+}
