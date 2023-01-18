@@ -402,41 +402,14 @@ body {
 
 .benefit {
   align-items: center;
-  margin-top: 30px;
+  padding: 15px 0;
   display: flex;
-}
-
-.benefit:last-child {
-  margin-bottom: 30px;
-}
-
-@media (min-width: 1000px) {
-  .benefit {
-    margin-top: 45px;
-  }
-
-  .benefit:last-child {
-    margin-bottom: 45px;
-  }
 }
 
 .benefit__icon {
   width: 40px;
   height: 40px;
-  background-size: contain;
   flex-shrink: 0;
-}
-
-.benefit__icon_delivery {
-  background-image: url("delivery.22371217.svg");
-}
-
-.benefit__icon_support {
-  background-image: url("support.339205ea.svg");
-}
-
-.benefit__icon_return {
-  background-image: url("return.26639f75.svg");
 }
 
 @media (min-width: 1000px) {
@@ -464,6 +437,13 @@ body {
 
 .benefit-wrapper {
   background-color: #eee;
+  padding: 15px 0;
+}
+
+@media (min-width: 1000px) {
+  .benefit-wrapper {
+    padding: 30px 0;
+  }
 }
 
 .footer {
@@ -475,7 +455,6 @@ body {
 }
 
 .footer__links-group {
-  box-sizing: border-box;
   height: 100%;
   align-items: center;
   gap: 15px;
@@ -483,6 +462,7 @@ body {
 }
 
 .footer__links-group_stores {
+  box-sizing: border-box;
   gap: 8px;
   padding-top: 30px;
 }
@@ -501,22 +481,17 @@ body {
 }
 
 .footer__links-group_logo {
-  justify-content: flex-end;
   display: none;
 }
 
 @media (min-width: 1000px) {
   .footer__links-group_logo {
+    justify-content: flex-end;
     display: flex;
   }
 }
 
-.footer__link {
-  display: block;
-}
-
 .footer__link-img {
-  width: auto;
   display: block;
 }
 
