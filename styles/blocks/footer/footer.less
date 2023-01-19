@@ -1,0 +1,61 @@
+.footer {
+    background-color: #212122;
+
+    &__top {
+        padding: 30px 0;
+    }
+
+    &__links-group {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 100%;
+    }
+    
+    &__links-group_stores {
+        gap: 8px;
+        box-sizing: border-box;
+        padding-top: 30px;
+
+        @media @screen-gt-s {
+            justify-content: flex-end;
+            padding-top: 0;
+        }
+
+        @media @screen-gt-m {
+            justify-content: center;
+        }
+    }
+
+    &__links-group_logo {
+        display: none;
+        
+        @media @screen-gt-m {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__link-img {
+        display: block;
+    }
+
+    &__separator {
+        margin: 0;
+        border-color: #666;
+    }
+
+    &__text {
+        color: #999;
+        margin: 0;
+        padding: 15px 0 22px;
+
+        @media @screen-gt-s {
+            padding: 30px 0;
+        }
+
+        @media @screen-gt-m {
+            padding: 30px 0 35px;
+        }
+    }
+}

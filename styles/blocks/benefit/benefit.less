@@ -1,0 +1,43 @@
+.benefit {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+
+        @media @screen-gt-m {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__text {
+        margin-left: 20px;
+
+        @media @screen-gt-s {
+            margin-left: 10px;
+        }
+
+        @media @screen-gt-m {
+            margin-left: 30px;
+        }
+    }
+}
+
+.benefit-wrapper {
+    background-color: #eee;
+    padding: 30px 0;
+    @media @screen-gt-m {
+        padding: 45px 0;
+    }
+}
+
+.benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    @media @screen-only-s {
+        gap: 30px;
+    }
+}
