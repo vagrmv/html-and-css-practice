@@ -1,7 +1,6 @@
 .benefit {
     display: flex;
     align-items: center;
-    padding: 15px 0;
 
     &__icon {
         flex-shrink: 0;
@@ -29,8 +28,16 @@
 
 .benefit-wrapper {
     background-color: #eee;
-    padding: 15px 0;
+    padding: 30px 0;
     @media @screen-gt-m {
-        padding: 30px 0;
+        padding: 45px 0;
+    }
+}
+
+.benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    @media @screen-only-s {
+        gap: 30px;
     }
 }
