@@ -402,7 +402,6 @@ body {
 
 .benefit {
   align-items: center;
-  padding: 15px 0;
   display: flex;
 }
 
@@ -437,12 +436,23 @@ body {
 
 .benefit-wrapper {
   background-color: #eee;
-  padding: 15px 0;
+  padding: 30px 0;
 }
 
 @media (min-width: 1000px) {
   .benefit-wrapper {
-    padding: 30px 0;
+    padding: 45px 0;
+  }
+}
+
+.benefit-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .benefit-container {
+    gap: 30px;
   }
 }
 
